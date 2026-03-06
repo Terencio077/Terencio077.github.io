@@ -1,1 +1,0 @@
-# -CO-DESIGN-DE-APLICATIVOS---Grupo-1
