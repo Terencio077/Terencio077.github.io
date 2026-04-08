@@ -1,6 +1,15 @@
-.hamburger > img {
-    display: flex-start;
+.hamburger{
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger > a > img{
     width: 5rem;
     height: 5rem;
-    margin: 0.5rem;
+    margin: 1rem;
+}
+
+.semana{
+    position: relative;
+    align-items: center;
 }
