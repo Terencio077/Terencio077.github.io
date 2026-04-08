@@ -9,7 +9,20 @@
     margin: 1rem;
 }
 
-.semana{
+h1{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
     align-items: center;
+}
+
+h1 > a{
+    font-size: 2rem;
+    color: black;
+}
+
+h1 > ul{
+    display: flex;
+    flex-direction: row;
 }
