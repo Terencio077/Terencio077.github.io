@@ -1,0 +1,6 @@
+.hamburger > img {
+    display: flex-start;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+}
