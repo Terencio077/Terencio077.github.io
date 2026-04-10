@@ -1,20 +1,29 @@
-.hamburger{
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
+    border-bottom: 0.1rem solid black;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
 }
 
-.hamburger > a > img{
+header > a{
+    display: flex;
     width: 5rem;
-    height: 5rem;
-    margin: 1rem;
+    height: 4rem;
+    margin: 0.2rem 1rem;
 }
 
 h1{
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
+    flex-direction: column; 
     align-items: center;
+    left: 30rem;
 }
 
 h1 > a{
@@ -23,6 +32,93 @@ h1 > a{
 }
 
 h1 > ul{
+    position: relative;
+    top: 1rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
+
+h1 > ul > li{
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}  
+
+/* HEADER */
+
+/* FEED */
+
+.feed{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.receitas > img{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 40rem;
+    margin: 2rem 0rem 2rem;
+    border: 0.2rem solid black;
+}
+
+p1{
+    position: relative;
+    font-size: 1.2rem;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.feed > li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.icones img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* FEED */
+
+/* FOOTER */
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-top: 0.1rem solid black;
+}
+
+footer > ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+footer img {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+}
+/* FOOTER */    
