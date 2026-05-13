@@ -1,3 +1,18 @@
+/* MAIN E BODY */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+/* MAIN E BODY */
+
 /* HEADER */
 header{
     position: sticky;
@@ -9,6 +24,7 @@ header{
     z-index: 0;
     width: 100%;
     margin: 0;
+    z-index: 1;
 }
 
 header > a{
@@ -18,12 +34,12 @@ header > a{
     margin: 0.2rem 1rem;
 }
 
-h1{
+header h1{
     position: absolute;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    left: 30rem;
+    left: 25%;
 }
 
 h1 > a{
@@ -63,7 +79,7 @@ h2{
     position: relative;
     left: 15%;
     width: 70%;
-    height: 40rem;
+    height: 50%;
     margin: 2rem 0rem 2rem;
     border: 0.2rem solid black;
 }
@@ -85,9 +101,8 @@ p1{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 15%;
     width: 100%;
-    height: auto;
 }
 
 .icones img {
@@ -111,48 +126,52 @@ footer > ul {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 95%;
-    justify-content: space-between;
-    padding: 0rem 2rem;
+    width: 90%;
+    justify-content: space-evenly;
+    padding: 0% 5%;
 }
 
 footer img {
     width: 4rem;
     height: 4rem;
-    display: block;
 }
 /* FOOTER */ 
 
 /* MENU LATERAL */
+
 .menu{
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 60%;
-    border-right: 0.2rem solid black;
     z-index: 1;
     background-color: white;
+    width: 90%;
+    height: 100%;
 }
 
-.menu > li > a{
+.menu > li{
+    width: 100%;
+    border-bottom: 0.2rem solid black;
+}
+
+.menu a{
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0.5rem 1rem;
-    border-bottom: 0.2rem solid black;
     font-family: nunito, sans-serif;
-    font-size: 1.4rem;
-    width: 50%;
-    height: 20%;
+    font-size: 2rem;
+    width: 100%;
 }
 
 .menu img{
     position: relative;
-    width: 50%;
+    width: 30%;
     height: 20%;
-    margin-right: 0rem;
 }
 /* MENU LATERAL */
 
@@ -171,33 +190,38 @@ footer img {
 
 .voltar img{
     position: relative;
-    width: 70%;
+    width: 90%;
     height: 100%;
 }
 /* SETA DE VOLTAR */
+
 
 .despensa {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 2rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .despensa > img{
-    position: relative;
-    width: 20%;
-    height: 20%;
-    margin-bottom: 2rem;
+    width: 40%;
+    height: auto;
+    margin-bottom: 10%;
 }
 
 .despensa > a {
-    position: relative;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
-    height: 20%;
+    justify-content: center;
+    padding: 2% 2%;
+    width: auto;
+    margin-top: 10%;
+    background-color: #fff;
+    border: 0.2rem solid black;
 }
 
 .despensa > a > img {
