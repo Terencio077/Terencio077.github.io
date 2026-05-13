@@ -144,11 +144,13 @@ footer img {
     border-bottom: 0.2rem solid black;
     font-family: nunito, sans-serif;
     font-size: 1.4rem;
+    width: 50%;
+    height: 20%;
 }
 
 .menu img{
     position: relative;
-    width: 70%;
+    width: 50%;
     height: 20%;
     margin-right: 0rem;
 }
