@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aba de pesquisa com o filtro 'Sua despensa' aplicado</title>
+    <title>Pesquisa com filtro da despensa</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <ul>
-            <li>
-                <a href="#"> 
-                    <img src="img/lupa.png" alt="Lupa">Pesquisar receita
+<body class="pagina_app">
+    <header class="header_empilhado">
+        <ul class="header_pesquisa">
+            <li class="barra_pesquisa">
+                <a href="#">
+                    <img src="img/lupa.png" alt="">Pesquisar receitas
                 </a>
             </li>
             <li>
-                <a href="filtros.html">
-                    <img src="img/filtro.png" alt ="Filtro">
+                <a class="icone_canto" href="filtros.html">
+                    <img src="img/filtro.png" alt="Filtro">
                 </a>
             </li>
         </ul>
-        <h1>Filtros aplicados:</h1>
-        <ul>
-            <li>
-                Sua despensa
-            </li>
+        <ul class="filtros_aplicados">
+            <h2>Filtros aplicados</h2>
+            <li>Sua despensa</li>
         </ul>
     </header>
+    <main class="despensa">
+        <p>Aqui apareceriam as receitas que usam o que você tem na dispensa.</p>
+    </main>
 </body>
 </html>

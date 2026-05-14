@@ -3,40 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecionar refeição</title>
+    <title>Selecione a refeição</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <a href="#">
-            <img src="img/menu.png" alt="menu-hamburger">
-        </a>
-        <h1><a href="#">Selecionar refeição</a></h1>
-        <ul>
-            <li><a href="#">S</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">D</a></li>                
-        </ul>
+<body class="pagina_app">
+    <header class="header_simples">
+        <a class="seta_voltar" href="calendario.html"><img src="img/seta.png" alt="Voltar"></a>
+        <h1>Selecione a refeição</h1>
     </header>
     <main>
-    Selecione a refeição
-    <ul>
-        <li><a href="selecionar-pessoas.html">Café da Manhã</a></li>
-        <li><a href="selecionar-pessoas.html">Almoço</a></li>
-        <li><a href="selecionar-pessoas.html">Jantar</a></li>
-        <li><a href="selecionar-pessoas.html">Outra refeição</a></li>
-    </ul>
+        <ul class="lista_refeicoes">
+            <li>
+                <a href="selecionar-pessoas.html">
+                    <p class="icone_refeicao">☕</p>
+                    Café da manhã
+                </a>
+            </li>
+            <li>
+                <a href="selecionar-pessoas.html">
+                    <p class="icone_refeicao">🍽️</p>
+                    Almoço
+                </a>
+            </li>
+            <li>
+                <a href="selecionar-pessoas.html">
+                    <p class="icone_refeicao">🍲</p>
+                    Jantar
+                </a>
+            </li>
+            <li>
+                <a href="selecionar-pessoas.html">
+                    <p class="icone_refeicao">➕</p>
+                    Outra refeição
+                </a>
+            </li>
+        </ul>
     </main>
     <footer>
         <ul>
-            <li><a href="index.html"><img src="img/casa.png" alt="casa"></a></li>
-            <li><a href="#"><img src="img/pratos.png" alt="pratos"></a></li>
-            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="lupa"></a></li>
-            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="agenda"></a></li>
-            <li><a href="#"><img src="img/pessoas.png" alt="pessoas"></a></li>
+            <li><a href="index.html"><img src="img/casa.png" alt="Início"></a></li>
+            <li><a href="#"><img src="img/pratos.png" alt="Receitas"></a></li>
+            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="Pesquisar"></a></li>
+            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="Agenda"></a></li>
+            <li><a href="#"><img src="img/pessoas.png" alt="Perfil"></a></li>
         </ul>
     </footer>
 </body>

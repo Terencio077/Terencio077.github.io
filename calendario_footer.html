@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendário</title>
+    <title>Agenda da semana</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="pagina_app">
     <header>
         <a href="opcoes_menu.html">
-            <img src="img/menu.png" alt="menu-hamburger">
+            <img src="img/menu.png" alt="Abrir menu">
         </a>
-        <h1><a href="#">Calendário</a></h1>
-        <ul>
-            <li><a href="#">S</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">D</a></li>                
-        </ul>
+        <h1 class="cabecalho_mes">
+            <a href="calendario_footer.html">Março</a>
+        </h1>
     </header>
     <main>
-      <h2>Março</h2>
-      <ul>
-        <li>Segunda-feira (2)</li>
-        <li>Terça-feira (3)</li>
-        <li><a href="receita_exemplo.html">Hoje</a></li>
-        <li>Quinta-feira (5)</li>
-        <li>Sexta-feira (6)</li>
-        <li>Sábado (7)</li>
-        <li>Domingo (8)</li>
-      </ul>
+        <ul class="lista_dias_mes">
+            <li>Segunda-feira <p class="num_dia">2</p></li>
+            <li>Terça-feira <p class="num_dia">3</p></li>
+            <li class="hoje"><a href="receita_exemplo.html">Hoje <p class="num_dia">4</p></a></li>
+            <li>Quinta-feira <p class="num_dia">5</p></li>
+            <li>Sexta-feira <p class="num_dia">6</p></li>
+            <li>Sábado <p class="num_dia">7</p></li>
+            <li>Domingo <p class="num_dia">8</p></li>
+        </ul>
     </main>
     <footer>
         <ul>
-            <li><a href="index.html"><img src="img/casa.png" alt="casa"></a></li>
-            <li><a href="#"><img src="img/pratos.png" alt="pratos"></a></li>
-            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="lupa"></a></li>
-            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="agenda"></a></li>
-            <li><a href="#"><img src="img/pessoas.png" alt="pessoas"></a></li>
+            <li><a href="index.html"><img src="img/casa.png" alt="Início"></a></li>
+            <li><a href="#"><img src="img/pratos.png" alt="Receitas"></a></li>
+            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="Pesquisar"></a></li>
+            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="Agenda"></a></li>
+            <li><a href="#"><img src="img/pessoas.png" alt="Perfil"></a></li>
         </ul>
     </footer>
 </body>

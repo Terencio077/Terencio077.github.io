@@ -3,42 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opções de Filtros</title>
+    <title>Filtro de receitas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <a href="index.html">
-            <img src="img/seta.png" alt="Seta">
-        </a>
+<body class="pagina_app">
+    <header class="header_simples">
+        <a class="seta_voltar" href="aba_de_pesquisa.html"><img src="img/seta.png" alt="Voltar"></a>
         <h1>Filtrar</h1>
     </header>
 
-    <main>
-        <h1>Restrições</h1>
-        <ul>
-            <li>
-                Lactose
-            </li>
-            <li>
-                Glúten
-            </li>
-            <li>
-                Frutos do mar
-            </li>
+    <main class="pagina_filtros">
+        <h2 class="titulo_secao">Restrições</h2>
+        <ul class="lista_opcao">
+            <li>Lactose</li>
+            <li>Glúten</li>
+            <li>Frutos do mar</li>
         </ul>
-        <h1>Ingredientes</h1>
-        <ul>
+        <h2 class="titulo_secao">Ingredientes</h2>
+        <ul class="lista_opcao">
             <li>
-                <a href='pesquisa_filtrada_com_dispensa.html'>
-                    Sua despensa
-                </a>
+                <a href="filtros_confirmado.html">Sua despensa</a>
             </li>
-            <li>
-                Carne
-            </li>
-            <li>
-                Frango
-            </li>
+            <li>Carne</li>
+            <li>Frango</li>
         </ul>
     </main>
 </body>

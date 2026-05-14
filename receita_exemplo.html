@@ -3,57 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita C</title>
+    <title>Feijoada</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="pagina_app">
     <header>
         <a href="opcoes_menu.html">
-            <img src="img/menu.png" alt="menu-hamburger">
+            <img src="img/menu.png" alt="Abrir menu">
         </a>
-        <h1><a href="#">Sua semana</a></h1>
-        <ul>
-            <li><a href="#">S</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">D</a></li>                
+        <ul class="bloco_titulo">
+            <h1 class="cabecalho_receita">
+                <a href="receita_exemplo.html">Feijoada</a>
+            </h1>
+            <p class="linha_avaliacao">👍 ○ ○ ○ ○ ○</p>
         </ul>
     </header>
     <main>
-        <img src="img/certo.png" alt="Certo">
-        Você possui todos os ingredientes na sua despensa!
-        <h2>Receita C</h2>
-        <img src="img/feijoada.jpg" alt="receita C">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sequi quam dolorem vitae doloribus eos molestiae ipsa illum quas eveniet obcaecati placeat, iusto consequatur praesentium quia, voluptatum quisquam provident dicta?</p>
-        <p>Ingredientes</p>
-        <ul>
-            <li>Ingrediente A</li>
-            <li>Ingrediente B</li>
-            <li>Ingrediente C</li>
+        <ul class="receita_corpo">
+            <li class="aviso_despensa">
+                <img src="img/certo.png" alt="">
+                <p>Você possui todos os ingredientes na sua dispensa.</p>
+            </li>
+            <img class="foto_grande" src="img/feijoada.jpg" alt="Panela de feijoada">
+            <a class="link_editar" href="editar_grupo.html">Editar grupo</a>
+            <p class="rotulo_secao">Ingredientes</p>
+            <ul class="ingredientes_check">
+                <li>Feijão preto (500 g)</li>
+                <li>Linguiça e carnes salgadas</li>
+                <li>Folhas de louro e temperos</li>
+            </ul>
+            <p class="rotulo_secao">Modo de preparo</p>
+            <p class="video_placeholder" aria-label="Vídeo da receita">▶</p>
         </ul>
-        <p>Modo de preparo</p>
-        <ol>
-            <li>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora esse quasi ad itaque autem a dolor quod, reprehenderit magni voluptatem et molestias vero maiores nam amet porro cumque recusandae?
-            </li>
-            <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, quisquam autem. Magni itaque in unde obcaecati a modi eveniet eligendi dolorem, at accusamus rem dolor ullam officiis placeat ipsa eaque.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe a repellendus rem praesentium pariatur minima iste quo, aliquid adipisci dignissimos incidunt reiciendis corporis molestiae culpa eveniet aliquam qui eius possimus?
-            </li>
-        </ol>
-        <a href="editar_grupo.html">Editar grupo</a>
     </main>
     <footer>
         <ul>
-            <li><a href="index.html"><img src="img/casa.png" alt="casa"></a></li>
-            <li><a href="#"><img src="img/pratos.png" alt="pratos"></a></li>
-            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="lupa"></a></li>
-            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="agenda"></a></li>
-            <li><a href="#"><img src="img/pessoas.png" alt="pessoas"></a></li>
+            <li><a href="index.html"><img src="img/casa.png" alt="Início"></a></li>
+            <li><a href="#"><img src="img/pratos.png" alt="Receitas"></a></li>
+            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="Pesquisar"></a></li>
+            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="Agenda"></a></li>
+            <li><a href="#"><img src="img/pessoas.png" alt="Perfil"></a></li>
         </ul>
     </footer>
 </body>
