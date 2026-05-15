@@ -87,7 +87,7 @@ header {
     flex-direction: row;
     align-items: flex-start;
     border-bottom: 0.1rem solid var(--cor-borda);
-    background-color: var(--cor-laranja);
+    background-color: var(--cor-fundo-claro);
     z-index: 2;
     width: 100%;
     padding: 0.35rem 0;
