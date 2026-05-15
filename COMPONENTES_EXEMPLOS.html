@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Componentes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pagina_app">
+    <header class="header_simples">
+        <a class="seta_voltar" href="index.html"><img src="img/seta.png" alt="Voltar"></a>
+        <h1>Componentes CSS Melhorados</h1>
+    </header>
+    
+    <main style="padding: 1rem 1rem 5rem;">
+        
+        <!-- BREADCRUMB -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">1. Breadcrumb</h2>
+            <nav aria-label="breadcrumb">
+                <a href="index.html">Início</a> > 
+                <a href="#">Receitas</a> > 
+                <span>Macarronada</span>
+            </nav>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">
+                ✓ Mostra localização atual no app | Melhora navegação
+            </p>
+        </section>
+
+        <!-- BOTÕES PADRÃO -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">2. Botões com Estados</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <button>Botão Normal</button>
+                <button class="primario">Botão Primário</button>
+                <button disabled>Botão Desabilitado</button>
+            </div>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">
+                ✓ Hover: destacado | Active: pressionado | Disabled: desabilitado
+            </p>
+        </section>
+
+        <!-- NOTIFICAÇÃO DE SUCESSO -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">3. Notificações</h2>
+            <button onclick="mostrarNotificacao()">Clique para ver notificação</button>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">
+                ✓ Feedback visual | Desaparece automaticamente | Não interrompe fluxo
+            </p>
+        </section>
+
+        <!-- BREADCRUMB SECUNDÁRIO -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">4. Estados de Link</h2>
+            <p>
+                <a href="#">Link normal</a> | 
+                <a href="#" class="ativo">Link ativo</a> | 
+                <a href="#" aria-current="page">Link página atual</a>
+            </p>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">
+                ✓ Feedback ao passar mouse | Cores consistentes
+            </p>
+        </section>
+
+        <!-- PÁGINA ATIVA NO FOOTER -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">5. Footer com Página Ativa</h2>
+            <p style="font-size: 0.85rem; color: #666;">
+                ✓ Item ativo tem classe "ativo" e atributo aria-current="page"<br>
+                ✓ Adicionado em: index.html, aba_de_pesquisa.html, calendario_footer.html
+            </p>
+        </section>
+
+        <!-- COMO USAR -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">📋 Como Usar</h2>
+            <details style="margin: 0.5rem 0; cursor: pointer;">
+                <summary style="font-weight: 600;">1. Breadcrumb</summary>
+                <pre style="background: #f5f5f5; padding: 0.5rem; margin-top: 0.5rem; overflow-x: auto;">
+&lt;nav aria-label="breadcrumb"&gt;
+    &lt;a href="index.html"&gt;Início&lt;/a&gt; &gt; 
+    &lt;span&gt;Página Atual&lt;/span&gt;
+&lt;/nav&gt;</pre>
+            </details>
+
+            <details style="margin: 0.5rem 0; cursor: pointer;">
+                <summary style="font-weight: 600;">2. Botão Primário</summary>
+                <pre style="background: #f5f5f5; padding: 0.5rem; margin-top: 0.5rem; overflow-x: auto;">
+&lt;button class="primario"&gt;Ação Principal&lt;/button&gt;</pre>
+            </details>
+
+            <details style="margin: 0.5rem 0; cursor: pointer;">
+                <summary style="font-weight: 600;">3. Notificação</summary>
+                <pre style="background: #f5f5f5; padding: 0.5rem; margin-top: 0.5rem; overflow-x: auto;">
+&lt;!-- Adicione no final do &lt;body&gt; --&gt;
+&lt;div class="notificacao"&gt;✓ Ação realizada!&lt;/div&gt;
+
+&lt;!-- Com erro --&gt;
+&lt;div class="notificacao erro"&gt;❌ Erro ao salvar&lt;/div&gt;
+
+&lt;!-- Com alerta --&gt;
+&lt;div class="notificacao alerta"&gt;⚠️ Atenção!&lt;/div&gt;</pre>
+            </details>
+
+            <details style="margin: 0.5rem 0; cursor: pointer;">
+                <summary style="font-weight: 600;">4. Página Ativa</summary>
+                <pre style="background: #f5f5f5; padding: 0.5rem; margin-top: 0.5rem; overflow-x: auto;">
+&lt;footer&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html" class="ativo" 
+               aria-current="page"&gt;
+            &lt;img src="img/casa.png" alt="Início"&gt;
+        &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/footer&gt;</pre>
+            </details>
+        </section>
+
+        <!-- TOKENS CSS -->
+        <section>
+            <h2 style="font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;">🎨 Design Tokens (CSS)</h2>
+            <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">
+                <strong>Paleta de Cores:</strong>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #64798C; border: 1px solid #222; border-radius: 4px; margin: 0 auto 0.5rem;"></div>
+                    <small><strong>#64798C</strong><br>Azul Escuro<br>rgb(100, 121, 140)</small>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #C7D209; border: 1px solid #222; border-radius: 4px; margin: 0 auto 0.5rem;"></div>
+                    <small><strong>#C7D209</strong><br>Azul Claro<br>rgb(199, 210, 217)</small>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #F2CB07; border: 1px solid #222; border-radius: 4px; margin: 0 auto 0.5rem;"></div>
+                    <small><strong>#F2CB07</strong><br>Amarelo<br>rgb(242, 203, 7)</small>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #F28705; border: 1px solid #222; border-radius: 4px; margin: 0 auto 0.5rem;"></div>
+                    <small><strong>#F28705</strong><br>Laranja (Primária)<br>rgb(242, 135, 5)</small>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #A66851; border: 1px solid #222; border-radius: 4px; margin: 0 auto 0.5rem;"></div>
+                    <small><strong>#A66851</strong><br>Marrom<br>rgb(166, 104, 81)</small>
+                </div>
+            </div>
+            <pre style="background: #f5f5f5; padding: 0.75rem; overflow-x: auto; font-size: 0.85rem;">
+:root {
+    /* Paleta Principal */
+    --cor-azul-escuro: #64798C;
+    --cor-azul-claro: #C7D209;
+    --cor-amarelo: #F2CB07;
+    --cor-laranja: #F28705;
+    --cor-marrom: #A66851;
+    
+    /* Cores Funcionais */
+    --cor-primaria: #F28705;      /* Laranja */
+    --cor-secundaria: #F2CB07;    /* Amarelo */
+    --cor-accent: #64798C;        /* Azul Escuro */
+    --cor-neutro: #C7D209;        /* Azul Claro */
+    --cor-borda: #64798C;
+    --cor-texto: #64798C;
+}</pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="index.html"><img src="img/casa.png" alt="Início"></a></li>
+            <li><a href="#"><img src="img/pratos.png" alt="Receitas"></a></li>
+            <li><a href="aba_de_pesquisa.html"><img src="img/lupa.png" alt="Pesquisar"></a></li>
+            <li><a href="calendario_footer.html"><img src="img/agenda.png" alt="Agenda"></a></li>
+            <li><a href="#"><img src="img/pessoas.png" alt="Perfil"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function mostrarNotificacao() {
+            // Criar notificação
+            const notif = document.createElement('div');
+            notif.className = 'notificacao';
+            notif.textContent = '✓ Receita adicionada à agenda!';
+            document.body.appendChild(notif);
+            
+            // Remover após 3 segundos
+            setTimeout(() => {
+                notif.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
