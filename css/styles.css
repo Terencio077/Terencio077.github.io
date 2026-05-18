@@ -27,7 +27,6 @@
     --cor-desabilitado: #ccc;
     
     --raio-borda: 0.35rem;
-    --transicao: 0.2s ease-in-out;
 }
 
 /* ── Formatação Geral ── */
@@ -586,7 +585,6 @@ h2 {
     text-align: center;
     line-height: 1.1;
     cursor: pointer;
-    transition: all var(--transicao);
 }
 
 .btn_confirmar:hover {
@@ -1050,7 +1048,6 @@ nav[aria-label="breadcrumb"] {
 nav[aria-label="breadcrumb"] a {
     color: var(--cor-primaria);
     text-decoration: none;
-    transition: color var(--transicao);
 }
 
 nav[aria-label="breadcrumb"] a:hover {
@@ -1070,7 +1067,6 @@ button, .btn {
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all var(--transicao);
 }
 
 button:hover, .btn:hover {
@@ -1123,17 +1119,6 @@ footer a.ativo {
     animation: slideUp 0.3s ease-out;
 }
 
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) translateY(1rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-}
-
 .alerta {
     background: var(--cor-alerta);
     border-color: var(--cor-laranja);
@@ -1168,7 +1153,6 @@ dialog, .modal-confirmacao {
 
 /* Links com feedback */
 a {
-    transition: color var(--transicao);
 }
 
 a:hover {
@@ -1190,8 +1174,6 @@ input:disabled {
     background: var(--cor-desabilitado);
     cursor: not-allowed;
 }
-
-/* ── Componentes Melhorados ── */
 
 /* ── Rodapé ── */
 
