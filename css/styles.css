@@ -1151,10 +1151,6 @@ dialog, .modal-confirmacao {
     margin-top: 1.5rem;
 }
 
-/* Links com feedback */
-a {
-}
-
 a:hover {
     color: var(--cor-primaria);
 }
