@@ -2,26 +2,14 @@
 
 /* ── Design Tokens ── */
 :root {
-    /* Paleta Principal */
-    --cor-azul-escuro: #64798C;
-    --cor-azul-claro: #C7D209;
-    --cor-amarelo: #F2CB07;
-    --cor-laranja: #F28705;
-    --cor-marrom: #A66851;
-    
     /* Cores Funcionais */
     --cor-primaria: #F28705;
     --cor-primaria-hover: #E67C00;
-    --cor-secundaria: #F2CB07;
-    --cor-accent: #64798C;
-    --cor-neutro: #C7D209;
-    
     --cor-borda: #64798C;
     --cor-fundo: #fff;
     --cor-fundo-claro: #f2f2f2;
     --cor-sucesso: #F2CB07;
     --cor-alerta: #F28705;
-    --cor-erro: #E74C3C;
     --cor-texto: #64798C;
     --cor-texto-claro: #999;
     --cor-desabilitado: #ccc;
